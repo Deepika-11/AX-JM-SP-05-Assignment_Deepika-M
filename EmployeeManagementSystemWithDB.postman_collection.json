@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "3567494b-9a14-434f-a784-b75270619c11",
+		"name": "EmployeeManagementSystemWithDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15859719"
+	},
+	"item": [
+		{
+			"name": "GetAllEmployees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/get/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"get",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEmployeeById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/get/id/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"get",
+						"id",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveEmployee",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"employeeId\": 3,\r\n    \"role\":\"staff\",\r\n    \"employeeFirstName\":\"Deepika\",\r\n    \"employeeLastName\":\"Murugesan\",\r\n    \"emailId\":\"LAFKN@gmail.com\",\r\n    \"password\":\"Jkhytkg97DFB\",\r\n    \"salary\":23000.00,\r\n    \"address\":\"Namakkal\",\r\n    \"department\":{\r\n        \"departmentId\":2\r\n       }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/employees/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllDepartments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/departments/get/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"departments",
+						"get",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDepartmentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/departments/get/id/22",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"departments",
+						"get",
+						"id",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveDepartment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"departmentId\":5,\r\n    \"departmentName\":\"CSE\",\r\n    \"collegeName\":\"Karpagam\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/departments/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"departments",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEmployeeBySalary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/get/salary/26000.000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"get",
+						"salary",
+						"26000.000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEmployeeByDeptName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employees/get/deptName/eee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employees",
+						"get",
+						"deptName",
+						"eee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
